@@ -2,12 +2,13 @@
 font-family: 'Montserrat Alternates', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat+Alternates&display=swap');
 
-nav {
+.nav {
     list-style-type: none;
-    margin: 0;
+    margin: 100px 100 100px 100px;
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
+    border: 1px solid black;
 }
   
 li a {
