@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat+Alternates&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -20,10 +19,8 @@ header {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header,
-main {
-	max-width: 767px;
-	margin: 0 auto;
+header, main {
+	margin: 0;
 }
 
 h1 {
@@ -31,19 +28,20 @@ h1 {
 }
 
 nav {
-	background-color: #36454f;
+	background-color: #0d3a58;
 	margin: 0 auto;
 	max-width: 800px;
 }
 nav ul {
 	list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
 nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
+	display: inline-block;
+    color: #fff;
 	padding: 1rem;
-	text-decoration: none;
+    flex: 1 1 100%;
 }
 
 nav a:hover {
@@ -53,6 +51,28 @@ nav a:hover {
     
 }
 
-.active {
-	color: yellow;
+main {
+    margin-left: 600px;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid black;
+    max-width: 600px;
+    padding: 1em;
+}
+
+.card h3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 20px;
+    text-align: center;
+    background-color: #0d3a58;
+    color: white;
+}
+
+.card ul {
+    grid-row: 2;
 }
