@@ -73,5 +73,5 @@ nav a:hover {
 }
 
 #menu.show::before {
-	content: "X";
+	content: "|||";
 }
