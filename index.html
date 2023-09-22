@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" media='screen and (min-width: 100px) and (max-width: 800px)' href="styles/base.css" />
-    <link rel="stylesheet" media='screen and (min-width: 801px) and (max-width: 3000px)' href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="favicon.ico">
     <title>Jacob Madsen - WDD 230 - Web Frontend Development</title>
 </head>
@@ -18,14 +18,16 @@
         <img src="">
         <h1>Jacob Madsen</h1>
     </header>
-    <div class="nav">
-        <a id="menu" href="#"></a>
+    <div>        
         <nav>
-            <span><a href="">Home</a></span>
-            <span><a href="">Chamber</a></span>
-            <span><a href="">Site Plan</a></span>
-            <span><a href="">Form</a></span>
-
+            <a id="menu" href="#"></a>
+            <button id="dark" type="button">Dark</button>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="">Site Plan</a></li>
+                <li><a href="">Form</a></li>
+            </ul>
         </nav>
     </div>
     <main>
@@ -46,7 +48,7 @@
             </div>
         </div>
         <div class="card">
-            <h3 id="information">Information</h3>
+            <h3>Information</h3>
         </div>
     </main>
     <footer>
@@ -54,11 +56,10 @@
             <a>&copy Jacob Madsen</a>
             <a>Utah</a>
             <img src="" alt="country flag">
-
         </p>
         <p id="lastModified"></p>
-
     </footer>
-    <script> src="getDates.js"</script>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </body>
 </html>

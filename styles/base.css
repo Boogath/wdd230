@@ -1,77 +1,182 @@
-/* font-family: 'Calistoga', cursive;
-font-family: 'Montserrat Alternates', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat+Alternates&display=swap');
-
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1A535C;
+    --secondary: #4ECDC4;
+    --accent1: #EBD2B4;
+    --accent2: #5E4955;
+    --white: #F7FFF7;
 }
 
 body {
-	font-family: "Sansita", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
 }
 
-/* mobile **************************/
+main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
+
 header {
-	background-color: #bbb;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--primary);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-header, main {
-	max-width: 767px;
-	margin: 0 auto;
+img {
+    box-shadow: 0px 0px 20px black;
 }
 
 h1 {
-	font-size: 2rem;
+    display: inline-block;
 }
 
 nav {
-	background-color: #2d5c7b;
-	margin: 0 auto;
-	max-width: 800px;
+    background-color: var(--secondary);
 }
-nav ul {
-	list-style-type: none;
+
+nav > ul {
+	list-style: none;
 }
+
 nav a {
+	color: black !important;
 	display: block;
-	color: #fff;
 	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+	text-decoration: inherit;
+	padding: 0.75rem;
+	font-size: 1.25rem;
 }
 
 nav a:hover {
-	border: 1px solid #fff;border: 1px solid white;
-    background-color: rgb(75, 51, 51);
-    color: white;    
+	background-color: var(--accent1);
+	text-decoration: underline;
+}
+
+nav a.active {
+	background-color: var(--accent2);
+	color: white !important;
+}
+
+.card {
+    
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px black;
+}
+
+.card ul {
+	list-style: none;
+	margin: 1rem;
+}
+
+.card h3 {
+	text-align: center;
+	background: var(--primary);
+	color: white;
+	padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+    footer #lastModified {
+        color: var(--white);
+    }
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin: 1rem;
+}
+
+a[href] {
+    color: blue;
 }
 
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: #000;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 
 #menu::before {
-	content: "≡";
+	content: "☰";
 }
 
-.show li {
+#menu.open::before {
+	content: "|||";
+}
+
+.navigation {
+    display: none;
+	list-style: none;
+	color: #fff;
+}
+
+.open {
+    display: block;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	font-weight: 700;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
 	display: block;
 }
 
-#menu.show::before {
-	content: "|||";
+#dark {
+    position: absolute;
+    right: 1rem;
+    width: 1rem;
+    height: 2rem;
+    color: black;
+}
+
+/*******   Changed to match contrast from dark to light mode   *********/
+body.dark {
+    --primary: #eee;
+    --secondary: ;
+    --accent1: ;
+    --accent2: ;
+    --white: black;
+    --black: white;
 }
