@@ -20,5 +20,9 @@
     #menu {
         display: none;
     }
+
+    #dark {
+        display: block;
+    }
 }
 

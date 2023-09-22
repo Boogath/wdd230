@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary: #1A535C;
-    --secondary: #4ECDC4;
-    --accent1: #EBD2B4;
-    --accent2: #5E4955;
-    --white: #F7FFF7;
+    --primary: #2dd777;
+    --secondary: #130f4d;
+    --accent1: #f6fa00;
+    --accent2: #6c0404;
+    --white: #ffffff;
 }
 
 body {
@@ -56,7 +56,7 @@ nav > ul {
 }
 
 nav a {
-	color: black !important;
+	color: white !important;
 	display: block;
 	text-align: center;
 	text-decoration: inherit;
@@ -65,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: var(--accent1);
+	background-color: var(--accent2);
 	text-decoration: underline;
 }
 
@@ -168,15 +168,15 @@ a[href] {
     right: 1rem;
     width: 1rem;
     height: 2rem;
-    color: black;
+    color: white;
 }
 
 /*******   Changed to match contrast from dark to light mode   *********/
 body.dark {
-    --primary: #eee;
-    --secondary: ;
-    --accent1: ;
-    --accent2: ;
+    --primary: #2dd777;
+    --secondary: #130f4d;
+    --accent1: #f6fa00;
+    --accent2: #6c0404;
     --white: black;
     --black: white;
 }
