@@ -49,6 +49,7 @@ h1 {
 
 nav {
     background-color: var(--secondary);
+    display: none;
 }
 
 nav > ul {
@@ -136,7 +137,6 @@ a[href] {
 }
 
 .navigation {
-    display: none;
 	list-style: none;
 	color: #fff;
 }
@@ -155,20 +155,12 @@ a[href] {
 .navigation li a:hover {
 	font-weight: 700;
 }
-.open li {
-	display: block;
-	width: 100%;
-}
-.open li a {
-	display: block;
-}
 
 #dark {
     position: absolute;
-    right: 1rem;
-    width: 1rem;
+    left: 1rem;
     height: 2rem;
-    color: white;
+    color: black;
 }
 
 /*******   Changed to match contrast from dark to light mode   *********/
