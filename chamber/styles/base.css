@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat+Alternates&family=Roboto+Slab&display=swap');
+
+:root {
+    --primary: #5585b5;
+    --secondary: #53a8b6;
+    --accent1: #79c2d0;
+    --accent2: #154a52;
+    --white: white;
+}
+
+body {
+    font-family: 'Roboto Slab', 'Calistoga', sans-serif;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+h1 {
+    font-family: 'Roboto Slab';
+}
+
+h2 {
+    font-family: 'Calistoga';
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--accent2);
+    padding: 20px;
+    border: 1rem ridge;
+}
