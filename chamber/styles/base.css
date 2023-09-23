@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat+Alternates&family=Roboto+Slab&display=swap');
 
 :root {
-    --primary: #5585b5;
-    --secondary: #53a8b6;
+    --primary: #91d2dc;
+    --secondary: #5c0967;
     --accent1: #79c2d0;
     --accent2: #154a52;
     --white: white;
@@ -32,4 +32,15 @@ h1, h2, h3 {
     background-color: var(--accent2);
     padding: 20px;
     border: 1rem ridge;
+}
+
+p {
+    text-align: center;
+    color: var(--secondary);
+    font-weight: 200px;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
