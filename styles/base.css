@@ -172,3 +172,13 @@ body.dark {
     --white: black;
     --black: white;
 }
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}

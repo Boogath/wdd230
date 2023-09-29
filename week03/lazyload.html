@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <link rel="stylesheet" href="styles/lazyLoad.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Example</h1>
+    </header>
+    <main>
+        <img src="images/fam1.webp" media="(max-width: 400px)" loading="lazy" alt="Photo #1">
+        <img src="images/fam2.webp" media="(max-width: 400px)" loading="lazy" alt="Photo #2">
+        <img src="images/fam3.webp" media="(max-width: 400px)" loading="lazy" alt="Photo #3">
+        <img src="images/fam4.webp" media="(max-width: 400px)" loading="lazy" alt="Photo #4">
+        <img src="images/fam5.webp" media="(max-width: 400px)" loading="lazy" alt="Photo #5">
+        <img src="images/fam6.webp" media="(max-width: 400px)" loading="lazy" alt="Photo #6">
+    </main>
+    <footer>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/lazyLoad.js" defer></script>
+</body>
+</html>
