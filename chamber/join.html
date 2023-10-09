@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Jacob Madsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico">
+    <title>Jacob Madsen - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <img src="images/profilePicture.png">
+        <h1>Jacob Madsen</h1>
+        <button id="menu"></button>
+        <button id="dark" type="button">Dark</button>
+    </header>            
+    <nav>        
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>    
+    <main>
+        
+    </main>
+    <footer>
+        <p>
+            <a>&copy Jacob Madsen</a>
+            <a>Utah</a>
+            <img src="images/americanFlag.webp" width="16px" height="16px" alt="country flag">
+        </p>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/dark.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+</body>
+</html>
