@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profilePicture.png">
+        <img src="images/profilePicture.png" alt="profile picture">
         <h1>Jacob Madsen</h1>
         <button id="menu"></button>
         <button id="dark" type="button">Dark</button>
@@ -29,13 +29,36 @@
         </ul>
     </nav>    
     <main>
-        
+        <h1>Chamber of Commerce Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Application information</legend>
+                <label  class="top">First Name* <input type="text" name="fname" required></label>
+                <label  class="top">Last Name* <input type="text" name="lname" required></label>
+                <label  class="top">Title or Position <input type="text" name="code" pattern="[a-zA-Z0-9-\s]+{7,}"></label>
+                <label  class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></label>
+                <label  class="top">Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label  class="top">Business or Organization Name* <input type="text" name="org" placeholder="htpp://" required></label>
+                <label  class="top">Membership Level
+                    <select name="membership">
+                        <option value="">Please Select </option>
+                    <option value="software">NP Membership</option>
+                    <option value="engineer">Bronze Membership</option>
+                    <option value="teacher">Silver Membership"</option>
+                    <option value="hardware">Gold Membership</option>
+                    </selection>
+                </label>
+                <label  class="mid">Business/Organization Description<input type="textarea" name="description" pattern="[a-zA-Z0-9-\s]+{7,}"></label>
+                <label class="bot">Time of Completion: <input type="hidden" name="timestamp"></label>
+                <input type="submit" value="Submit" class="submitBtn">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>
-            <a>&copy Jacob Madsen</a>
+            <a>&copy; &bull; Jacob Madsen</a>
             <a>Utah</a>
-            <img src="images/americanFlag.webp" width="16px" height="16px" alt="country flag">
+            <img src="images/americanFlag.webp" width="16" height="16" alt="country flag">
         </p>
         <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         <p id="lastModified"></p>
